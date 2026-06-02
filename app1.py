@@ -23,6 +23,6 @@ def send_discord_webhook(webhook_url, title, content):
     # 發送 POST 請求給 Discord
     response = requests.post(webhook_url, json=payload)
     return response.status_code
-WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
+WEBHOOK_URL = os.getenv("DC_WEBHOOK_URL")
 
 status = send_discord_webhook(WEBHOOK_URL, "沒事", "測試")
