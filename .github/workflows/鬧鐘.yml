@@ -23,5 +23,5 @@ jobs:
 
     - name: 執行定時鬧鐘
       env:
-        DISCORD_WEBHOOK_URL: ${{ secrets.DC_WEBHOOK_URL }}
+        DC_WEBHOOK_URL: ${{ secrets.DC_WEBHOOK_URL }}
       run: python app1.py
